@@ -1,0 +1,26 @@
+{
+  "name": "gpt-cli",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "win": "pkg index2.js --targets win-x64",
+    "mac": "pkg index2.js --targets mac",
+    "linux": "pkg index2.js --targets linux"
+  },
+  "pkg": {
+    "targets": [
+      "linux",
+      "win-x64",
+      "macos"
+    ]
+  },  
+  
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "commander": "^10.0.0",
+    "dotenv": "^16.0.3",
+    "openai": "^3.2.1"
+  }
+}
