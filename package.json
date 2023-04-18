@@ -4,18 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "win": "pkg index2.js --targets win-x64",
-    "mac": "pkg index2.js --targets mac",
-    "linux": "pkg index2.js --targets linux"
+    "win": "pkg index.js -t win-x64 -o chatgpt",
+    "mac": "pkg index.js -t mac chatgpt",
+    "linux": "pkg index.js -t linux chatgpt"
   },
-  "pkg": {
-    "targets": [
-      "linux",
-      "win-x64",
-      "macos"
-    ]
-  },  
-  
   "author": "",
   "license": "ISC",
   "dependencies": {
