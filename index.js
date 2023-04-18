@@ -2,14 +2,7 @@
 
 const { Configuration, OpenAIApi } = require("openai");
 const readline = require('readline');
-const { program } = require('commander');
 require('dotenv').config();
-
-program
-  .version('1.0.0')
-  .description('A simple ChatGPT CLI program');
-
-program.parse(process.argv);
 
 const configuration = new Configuration({
   organization: process.env.OPENAI_ORGANIZATION,
@@ -56,5 +49,3 @@ rl.on('close', () => {
   console.log('프로그램이 종료되었습니다');
   process.exit(0);
 });
-
-
