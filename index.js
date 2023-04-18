@@ -34,8 +34,7 @@ const generateMessage = async (prompt) => {
     presence_penalty: 0,
     stop: null,
   });
-  const message = completion.data.choices[0].text;
-  return message;
+  return completion.data.choices[0].text;
 }
 
 const sendMessage = () => {
