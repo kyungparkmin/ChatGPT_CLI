@@ -6,7 +6,7 @@
 OPENAI_ORGANIZATION=
 OPENAI_SECRET_KEY=
 ```
-api key 입력
+.env 파일 생성 & api key 입력
 
 ### 빌드
 npm install<br><br>
